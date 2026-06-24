@@ -65,13 +65,13 @@ export default {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('setchannel')
-                .setDescription('Set or disable the channel for birthday announcements. (Manage Server required)')
+                .setDescription('Set or disable the channel for birthday announcements.')
                 .addChannelOption(option =>
                     option
                         .setName('channel')
                         .setDescription('The text channel for announcements. Leave empty to disable.')
                         .addChannelTypes(ChannelType.GuildText)
-                        .setRequired(false)
+                        
                 )
         ),
 
