@@ -91,31 +91,31 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#bf4e65",
+      secondary: "#f5bc6c",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
+      success: "#b2f7b3",
+      error: "#c7632e",
       warning: "#FEE75C",
-      info: "#3498DB",
+      info: "#4f4e4d",
 
       // Neutral utility colors.
       light: "#FFFFFF",
-      dark: "#202225",
+      dark: "#000000",
       gray: "#99AAB5",
 
       // Discord-style palette shortcuts.
-      blurple: "#5865F2",
-      green: "#57F287",
-      yellow: "#FEE75C",
-      fuchsia: "#EB459E",
-      red: "#ED4245",
+      blurple: "#7f70c4",
+      green: "#b2f7b3",
+      yellow: "#f5bc6c",
+      fuchsia: "#e8aecd",
+      red: "#bf4e65",
       black: "#000000",
 
       // Feature-specific colors.
       giveaway: {
-        active: "#57F287",
+        active: "#90f5b0",
         ended: "#ED4245",
       },
       ticket: {
@@ -125,8 +125,8 @@ export const botConfig = {
         pending: "#99AAB5",
       },
       economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+      birthday: "#746dd6",
+      moderation: "#ffffff",
 
       // Ticket priority color mapping.
       priority: {
@@ -139,7 +139,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "PILOTSAUCE",
       // Footer icon URL (null = no icon).
       icon: null,
     },
