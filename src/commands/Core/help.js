@@ -22,23 +22,23 @@ const BUG_REPORT_BUTTON_ID = "help-bug-report";
 const HELP_MENU_TIMEOUT_MS = 5 * 60 * 1000;
 
 const CATEGORY_ICONS = {
-    Core: "ℹ️",
-    Moderation: "🛡️",
-    Economy: "💰",
-    Fun: "🎮",
-    Leveling: "📊",
-    Utility: "🔧",
-    Ticket: "🎫",
-    Welcome: "👋",
-    Giveaway: "🎉",
-    Counter: "🔢",
-    Tools: "🛠️",
-    Search: "🔍",
-    "Reaction Roles": "🎭",
-    Community: "👥",
+    Core: "",
+    Moderation: "",
+    Economy: "",
+    Fun: "",
+    Leveling: "",
+    Utility: "",
+    Ticket: "",
+    Welcome: "",
+    Giveaway: "",
+    Counter: "",
+    Tools: "",
+    Search: "",
+    "Reaction Roles": "",
+    Community: "",
     Birthday: "🎂",
-    "Join To Create": "🔌",
-    Verification: "✅",
+    "Join To Create": "",
+    Verification: "",
 };
 
 function formatCategoryName(rawCategory) {
@@ -59,7 +59,7 @@ export async function createInitialHelpMenu(client) {
 
     const options = [
         {
-            label: "📋 All Commands",
+            label: " All Commands",
             description: "Browse every available command in a single list",
             value: ALL_COMMANDS_ID,
         },
@@ -76,13 +76,13 @@ export async function createInitialHelpMenu(client) {
 
     const botName = client?.user?.username || "Bot";
     const embed = createEmbed({
-        title: `📖 ${botName} Help`,
+        title: ` ${botName} Help`,
         description: 'Set up your server, pick what to enable, then browse commands below.',
         color: 'primary',
         thumbnail: client.user?.displayAvatarURL?.({ size: 1024 }),
         fields: [
             {
-                name: '🚀 Getting Started',
+                name: ' Getting Started',
                 value: [
                     '**1. Launch setup** — Run `/configwizard` to configure prefix, mod role, and logs.',
                     '**2. Enable systems** — Use `/commands dashboard` to turn categories on or off.',                    '**3. Browse commands** — Use the menu below to view categories and commands.',
@@ -90,7 +90,7 @@ export async function createInitialHelpMenu(client) {
                 inline: false,
             },
             {
-                name: 'ℹ️ How It Works',
+                name: ' How It Works',
                 value: [
                     '• Dashboard commands manage each feature visually',
                     '• Settings are saved per server',
@@ -107,7 +107,7 @@ export async function createInitialHelpMenu(client) {
     });
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "I know that I got to, got to evovle!" 
     });
     embed.setTimestamp();
 
